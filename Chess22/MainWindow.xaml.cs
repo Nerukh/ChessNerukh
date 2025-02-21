@@ -55,7 +55,7 @@ namespace Chess22
                     namesList.Add(names);
                     passwordList.Add(password);
                 }
-                if (Name_TextBox.Text == "Server" && Password_TextBox.Text == "2444666668888888") 
+                if (Name_TextBox.Text == "Server" && Password_TextBox.Text == "123") 
                 {
                     Server server = new Server();
                     server.Show();
