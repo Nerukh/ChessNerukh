@@ -1,0 +1,25 @@
+﻿<Window x:Class="Chess22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess22"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="500">
+    <Grid Margin="-60,0,-75,0">
+        <Label Name="Registration_label" Content="Реєстрація" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Name="Name_label"  Content="Введіть ім'я:" HorizontalAlignment="Left" Margin="103,140,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="Name_TextBox" HorizontalAlignment="Left" Margin="103,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30" TextChanged="Name_TextBox_TextChanged"/>
+        <Label Name="Password_label" Content="Введіть пароль:" HorizontalAlignment="Left" Margin="103,214,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox Name="Password_TextBox" HorizontalAlignment="Left" Margin="103,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30"/>
+        <Button Content="Зайти" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Height="34" Width="100" Click="Button_Click"/>
+        <ComboBox Name="Language_ComboBox" VerticalAlignment="Top" Margin="396,48,44,0" SelectionChanged="Language_SelectionChanged" Width="60" Height="30" FontSize="16" RenderTransformOrigin="1.355,-0.882"  >
+            <ComboBoxItem Content="En" Tag="en" />
+            <ComboBoxItem Content="Ua" Tag="ua" IsSelected="True" />
+        </ComboBox>
+        <RadioButton Name="sing_in_RadioButton" Content="Зареєстрування" HorizontalAlignment="Left" Margin="400,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.604"/>
+        <RadioButton Name="login_RadioButton" Content="Вхід" HorizontalAlignment="Left" Height="19" Margin="400,150,0,0" VerticalAlignment="Top" Width="93" />
+
+
+    </Grid>
+</Window>

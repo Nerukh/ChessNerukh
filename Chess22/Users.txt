@@ -1,0 +1,2 @@
+Name: Nerukh; Password: 2321321; Wins: 0; Lose: 0; Games: 0; Rank: Newcomer 
+Name: Petro; Password: 1234321; Wins: 0; Lose: 0; Games: 0; Rank: Newcomer 
