@@ -21,7 +21,8 @@ namespace Chess22
 
     public partial class MainWindow : Window
     {
-       
+        public bool writes_name = false;
+        public bool writes_password = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -79,6 +80,7 @@ namespace Chess22
                     {
                         Name_TextBox.Foreground = new SolidColorBrush(Colors.Red);
                         Name_TextBox.Text = Chess22.Language.GetTranslation("Error_Registration");
+                        writes_name = true;
                     }
 
                 }
@@ -96,7 +98,7 @@ namespace Chess22
                     }
                     Password_TextBox.Foreground = new SolidColorBrush(Colors.Red);
                     Password_TextBox.Text = Chess22.Language.GetTranslation("Error_Password");
-
+                    writes_password = true;
                 }
             }
         }
@@ -111,5 +113,24 @@ namespace Chess22
             }
         }
 
+        private void Password_TextBox_GotFocus_1(object sender, RoutedEventArgs e)
+        {
+            if (writes_password == true)
+            {
+                Password_TextBox.Clear();
+                Password_TextBox.Foreground = new SolidColorBrush(Colors.Black);
+                writes_password = false;
+            }
+        }
+
+        private void Name_TextBox_GotFocus_1(object sender, RoutedEventArgs e)
+        {
+            if (writes_name == true)
+            {
+                Name_TextBox.Clear();
+                Password_TextBox.Foreground = new SolidColorBrush(Colors.Black);
+                writes_name = false;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 
 namespace Chess22
 {
@@ -16,7 +17,9 @@ namespace Chess22
                 { "Password", "Enter Password:" },
                 { "Network", "In Network:" },
                 { "Play", "In Game:" },
-                { "Start", "Start" }
+                { "Start", "Start" },
+                {"Running_Server", "The server is running" }
+            
             }
         },
         { "ua", new Dictionary<string, string>
@@ -31,6 +34,8 @@ namespace Chess22
                 { "Error_Password", "пароль не підходить до акаунта або не існує такого акаунта!"},
                 {"sing in", "Заєрестрування" },
                 {"login", "вхід" },
+                {"Running_Server", "Сервер Запущено" },
+                {"Users_Table", "Користувачі" }
             }
         }
     };

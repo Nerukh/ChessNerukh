@@ -11,7 +11,20 @@
         <Label Name="Play_label" Content="У грі" HorizontalAlignment="Left" Margin="147,39,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Name="Network_number_label" Content="0" HorizontalAlignment="Left" Margin="59,76,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Name="Play_number_label" Content="0" HorizontalAlignment="Left" Margin="162,76,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.638,0.875"/>
-        <Button Name="Start_button" Content="Запустити" HorizontalAlignment="Left" Margin="400,369,0,0" VerticalAlignment="Top" Click="Start_button_Click"/>
-
+        <Button Name="Start_button" Content="Запустити" HorizontalAlignment="Left" Margin="335,370,0,0" VerticalAlignment="Top" Click="Start_button_Click" RenderTransformOrigin="0.5,0.5" Height="27" Width="70">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.774"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox x:Name="UsersListBox" 
+                 Margin="617,64,10,10"
+                 SelectionChanged="UsersListBox_SelectionChanged"/>
+        <Label Name="Running_Server_Label" Content="" HorizontalAlignment="Left"  Margin="281,39,0,0" VerticalAlignment="Top" FontSize="30" />
+        <Label Name="Users_Table_Label" Content="Користувачі" HorizontalAlignment="Left" Margin="629,16,0,0" VerticalAlignment="Top" FontSize="25"/>
     </Grid>
 </Window>

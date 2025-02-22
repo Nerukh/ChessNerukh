@@ -9,9 +9,9 @@
     <Grid Margin="-60,0,-75,0">
         <Label Name="Registration_label" Content="Реєстрація" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label Name="Name_label"  Content="Введіть ім'я:" HorizontalAlignment="Left" Margin="103,140,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="Name_TextBox" HorizontalAlignment="Left" Margin="103,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30" TextChanged="Name_TextBox_TextChanged"/>
+        <TextBox Name="Name_TextBox" HorizontalAlignment="Left" Margin="103,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30" GotFocus="Name_TextBox_GotFocus_1" />
         <Label Name="Password_label" Content="Введіть пароль:" HorizontalAlignment="Left" Margin="103,214,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox Name="Password_TextBox" HorizontalAlignment="Left" Margin="103,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30"/>
+            <TextBox Name="Password_TextBox" HorizontalAlignment="Left" Margin="103,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" Height="30" GotFocus="Password_TextBox_GotFocus_1" />
         <Button Content="Зайти" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Height="34" Width="100" Click="Button_Click"/>
         <ComboBox Name="Language_ComboBox" VerticalAlignment="Top" Margin="396,48,44,0" SelectionChanged="Language_SelectionChanged" Width="60" Height="30" FontSize="16" RenderTransformOrigin="1.355,-0.882"  >
             <ComboBoxItem Content="En" Tag="en" />
